@@ -135,7 +135,7 @@
                                             "inputs": {
                                                 "body": {
                                                     "incidentArmId": "@triggerBody()?['object']?['id']",
-                                                    "message": "<p><strong>Signed Out the Following Google Users:<br>\n<br>\n</strong><strong>@{variables('Affected Google Users')}</strong><strong></strong></p>"
+                                                    "message": "<p><strong>Signed Out the Following Google Users:<br>\n</strong><strong>@{variables('Affected Google Users')}</strong><strong></strong></p>"
                                                 },
                                                 "host": {
                                                     "connection": {
@@ -195,7 +195,7 @@
                                                     "type": "AppendToStringVariable",
                                                     "inputs": {
                                                         "name": "Affected Google Users",
-                                                        "value": "@{items('For_each_-_Account')?['Name']}\n"
+                                                        "value": "@{concat(items('For_each_-_Account')?['name'], '@', items('For_each_-_Account')?['UPNSuffix'])}\n"
                                                     }
                                                 }
                                             },
@@ -225,7 +225,7 @@
                                                     "Host": "https://admin.googleapis.com/"
                                                 },
                                                 "method": "POST",
-                                                "uri": "https://admin.googleapis.com/admin/directory/v1/users/@{items('For_each_-_Account')?['name']}/signOut"
+                                                "uri": "https://admin.googleapis.com/admin/directory/v1/users/@{concat(items('For_each_-_Account')?['name'], '@', items('For_each_-_Account')?['UPNSuffix'])}/signOut"
                                             }
                                         }
                                     },
