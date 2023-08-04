@@ -11,8 +11,6 @@ This playbook is intended to be run from a Microsoft Sentinel Incident. It will 
 
 ![SignOutGoogleUser_Demo_1](Images/SignOutGoogleUser_Demo_1.png)
 
-![SignOutGoogleUser_Demo_2](Images/SignOutGoogleUser_Demo_2.png)
-
 > **Note**
 > Please note that this method may not work with all user types. In some cases, actions executed by service accounts could be restricted, particularly when attempting to operate on super admin accounts or accounts with higher privileges.
 
@@ -161,9 +159,11 @@ Next, in VS Code, click "**Terminal**" from the top menu and select "**New Termi
 
 In the terminal window, run the command "**python.exe -m pip install --upgrade pip**" to verify that the latest versions were properly installed.
 
-Next, run the commands "**pip3 install azure-functions**", "**pip3 install cryptography**" and "**pip3 install pyjwt**". The packages will be automatically added to the dependencies in the "**requirements.txt**" file once they have been successfully installed. Note about adding "**PyJWT**" to the file if it is not added automatically,
+Next, run the commands "**pip3 install azure-functions**", "**pip3 install cryptography**" and "**pip3 install pyjwt**". The packages will be automatically added to the dependencies in the "**requirements.txt**" file once they have been successfully installed.
 
 ![SignOutGoogleUser_Configure_VSCode_11](Images/SignOutGoogleUser_Configure_VSCode_11.png)
+
+Note about adding "**PyJWT**" to the file if it is not added automatically.
 
 After installing the required packages, the Azure Function can be deployed.
 
