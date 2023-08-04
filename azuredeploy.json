@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "metadata": {
         "title": "AS-Sign-Out-Google-User", 
-        "description": "This playbook is intended to be run from a Microsoft Sentinel Incident. It will look up the GitHub users associated with the Incident Account Entities and block them from your GitHub organization. If they are members of the GitHub organization, they will also be removed. A comment noting the affected GitHub users will be added to the Incident.",
-        "prerequisites": "1. Install 'AS-GitHub-Block-User' GitHub App for your organization. 2. A private key for the GitHub App Must be generated and encoded. 3. The GitHub App installation ID. 4. An Azure Key Vault Secret. 5. Deploy the 'CreateGoogleJWT' Azure Function.  Support for the set up and configuration of each of these items can be found here: https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User",
+        "description": "This playbook is intended to be run from a Microsoft Sentinel Incident. It will look up the Google Users associated with the Incident Account Entities and sign them out of all Google web and device sessions. This action also resets user sign-in cookies and forces them reauthenticate. A comment noting the affected Google Users will be added to the Incident.",
+        "prerequisites": "1. A Google Service Account with proper roles and scopes. 2. A private key for the Google Service Account Must be generated. 3. An Azure Key Vault Secret. 4. Deploy the 'CreateGoogleJWT' Azure Function.  Support for the set up and configuration of each of these items can be found here: https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User",
         "postDeployment": ["Access to the Azure Key Vault must be granted to the playbook","The Microsoft Sentinel Contributor role must be applied to the playbook"],
-        "lastUpdateTime": "2023-06-23T12:11:33Z",
+        "lastUpdateTime": "2023-08-03T18:27:33Z",
         "entities": ["Account"], 
         "tags": ["Microsoft Sentinel", "Incident", "Google API", "Sign Out User"], 
         "support": {
