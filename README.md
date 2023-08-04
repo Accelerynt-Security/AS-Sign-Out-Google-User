@@ -218,6 +218,8 @@ In the **Instance Details** section:
 
 * **Playbook Name**: This can be left as "**AS-Sign-Out-Google-User**" or you may change it.
 
+* **Function App Name**: Enter the name of your Azure Function App noted in [Deploy the Azure Function App](https://github.com/Accelerynt-Security/AS-Block-GitHub-User#deploy-the-azure-function-app)
+
 * **Key Vault Name**: Enter the name of the Key Vault referenced in [Create an Azure Key Vault Secret](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
 
 * **Secret Name**: Enter the name of the Key Vault Secret created in [Create an Azure Key Vault Secret](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
