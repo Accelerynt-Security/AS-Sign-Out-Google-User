@@ -132,7 +132,7 @@ Next, you will need to create an Azure Function project using the code included 
 
 ![SignOutGoogleUser_Configure_VSCode_5](Images/SignOutGoogleUser_Configure_VSCode_5.png)
 
-From the command palette in the tope-center area of the window, select "**Python**" as the programming language, then select "**Python 3.10.11**" or later for your Python interpreter.
+From the command palette in the top-center area of the window, select "**Python**" as the programming language, then select "**Python 3.10.11**" or later for your Python interpreter.
 
 ![SignOutGoogleUser_Configure_VSCode_6](Images/SignOutGoogleUser_Configure_VSCode_6.png)
 
@@ -151,7 +151,7 @@ Replace the contents of "**__init__.py**" in VS Code with the contents of "**Cre
 
 ![SignOutGoogleUser_Configure_VSCode_9](Images/SignOutGoogleUser_Configure_VSCode_9.png)
 
-Finally, the Python packages used in __init__.py need to be installed. Download and install the latest versions of Python and npm from the official website: https://nodejs.org/en/download
+Finally, the Python packages used in __init__.py need to be installed. Download and install the latest versions of Python and pip from the official website:  https://www.python.org/downloads/
 
 Next, in VS Code, click "**Terminal**" from the top menu and select "**New Terminal**".
 
@@ -163,7 +163,9 @@ Next, run the commands "**pip3 install azure-functions**", "**pip3 install crypt
 
 ![SignOutGoogleUser_Configure_VSCode_11](Images/SignOutGoogleUser_Configure_VSCode_11.png)
 
-Note about adding "**PyJWT**" to the file if it is not added automatically.
+Check the "**requirements.txt**" file to ensure all three dependencies have been added. You may have to add them manually, which is fine, as long as the install commands have already been run. Be sure to save the file if you are updating it manually.
+
+![SignOutGoogleUser_Configure_VSCode_12](Images/SignOutGoogleUser_Configure_VSCode_12.png)
 
 After installing the required packages, the Azure Function can be deployed.
 
@@ -185,7 +187,7 @@ VS Code will guide you through the process. You will need to provide a globally 
 
 The Azure Function can now be deployed to the Azure Function App from VS Code. 
 
-Click back to the Explorer icon in the left side Activity Bar and right-click inside your project folder, then select "**Deploy to Function App...**". 
+Click the Function App icon in the workspace section of the Azure extension, then select "**Deploy to Function App...**". 
 
 ![SignOutGoogleUser_Deploy_Azure_Function_3](Images/SignOutGoogleUser_Deploy_Azure_Function_3.png)
 
