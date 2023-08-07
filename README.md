@@ -169,9 +169,6 @@ Check the "**requirements.txt**" file to ensure all three dependencies have been
 
 After installing the required packages, the Azure Function can be deployed.
 
-> **Note**
-> Simply recreating the file structure from this repository in Azure will not actually install the libraries required for the Azure Function; the function must be deployed from an IDE, so that the dependent library packages are recreated and properly installed. Any IDE can be used for this, but this documentation will outline the process using Visual Studio Code (VS Code).
-
 
 #### Deploy the Azure Function App:
 
