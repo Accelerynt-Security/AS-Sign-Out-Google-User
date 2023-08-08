@@ -7,7 +7,7 @@ For any technical questions, please contact info@accelerynt.com
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.Googleusercontent.com%2FAccelerynt-Security%2FAS-Sign-Out-Google-User%2Fmain%2Fazuredeploy.json)
 [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.Googleusercontent.com%2FAccelerynt-Security%2FAS-Sign-Out-Google-User%2Fmain%2Fazuredeploy.json)       
 
-This playbook is intended to be run from a Microsoft Sentinel Incident. It will look up the Google Users associated with the Incident Account Entities and sign them out of all Google web and device sessions. This action also resets user sign-in cookies and forces them reauthenticate. A comment noting the affected Google Users will be added to the Incident.
+This playbook is intended to be run from a Microsoft Sentinel Incident. It will look up the Google Users associated with the Incident Account Entities and sign them out of all Google web and device sessions. This action also resets user sign-in cookies and forces them to reauthenticate. A comment noting the affected Google Users will be added to the Incident.
 
 ![SignOutGoogleUser_Demo_1](Images/SignOutGoogleUser_Demo_1.png)
 
