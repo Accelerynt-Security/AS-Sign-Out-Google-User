@@ -20,11 +20,11 @@ This playbook is intended to be run from a Microsoft Sentinel Incident. It will 
                                                                                                                             
 The following items are required under the template settings during deployment: 
 
-* A [Google Service Account](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-a-google-service-account) with the proper scope and role configurations
-* A [Private Key](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-a-private-key) in JSON format for your Google Service Account
-* An [Azure Key Vault Secret](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret) containing your  private key
-* Install [Visual Studio Code](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#configure-visual-studio-code) and configure it to deploy an Azure Function to your Azure tenant
-* An [Azure Function App](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#deploy-the-azure-function-app) that supports Python to deploy an Azure function to
+* A [Google Service Account](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-a-google-service-account) with the proper scope and role configurations
+* A [Private Key](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-a-private-key) in JSON format for your Google Service Account
+* An [Azure Key Vault Secret](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret) containing your  private key
+* Install [Visual Studio Code](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#configure-visual-studio-code) and configure it to deploy an Azure Function to your Azure tenant
+* An [Azure Function App](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#deploy-the-azure-function-app) that supports Python to deploy an Azure function to
 
 
 # 
@@ -90,11 +90,11 @@ Navigate to an existing Key Vault or create a new one. From the Key Vault overvi
 
 ![SignOutGoogleUser_Key_Vault_Create_Secret_1](Images/SignOutGoogleUser_Key_Vault_Create_Secret_1.png)
 
-Choose a name for the secret, such as "**Google-App-Private-Key--Sign-Out-User**", and enter the Google private key JSON copied from the [previous step](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#encode-the-private-key-for-storage-compatibility-in-azure-key-vault) in the "**Value**" field. All other settings can be left as is. Click "**Create**". 
+Choose a name for the secret, such as "**Google-App-Private-Key--Sign-Out-User**", and enter the Google private key JSON copied from the [previous step](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#encode-the-private-key-for-storage-compatibility-in-azure-key-vault) in the "**Value**" field. All other settings can be left as is. Click "**Create**". 
 
 ![SignOutGoogleUser_Key_Vault_Create_Secret_2](Images/SignOutGoogleUser_Key_Vault_Create_Secret_2.png)
 
-Once your secret has been added to the vault, navigate to the "**Access policies**" menu option on the Key Vault page menu. Leave this page open, as you will need to return to it once the playbook has been deployed. See [Granting Access to Azure Key Vault](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#granting-access-to-azure-key-vault).
+Once your secret has been added to the vault, navigate to the "**Access policies**" menu option on the Key Vault page menu. Leave this page open, as you will need to return to it once the playbook has been deployed. See [Granting Access to Azure Key Vault](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#granting-access-to-azure-key-vault).
 
 ![SignOutGoogleUser_Key_Vault_Create_Secret_3](Images/SignOutGoogleUser_Key_Vault_Create_Secret_3.png)
 
@@ -219,9 +219,9 @@ In the **Instance Details** section:
 
 * **Function App Name**: Enter the name of your Azure Function App noted in [Deploy the Azure Function App](https://github.com/Accelerynt-Security/AS-Block-GitHub-User#deploy-the-azure-function-app)
 
-* **Key Vault Name**: Enter the name of the Key Vault referenced in [Create an Azure Key Vault Secret](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
+* **Key Vault Name**: Enter the name of the Key Vault referenced in [Create an Azure Key Vault Secret](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
 
-* **Secret Name**: Enter the name of the Key Vault Secret created in [Create an Azure Key Vault Secret](https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
+* **Secret Name**: Enter the name of the Key Vault Secret created in [Create an Azure Key Vault Secret](https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User#create-an-azure-key-vault-secret).
 
 Towards the bottom, click on "**Review + create**". 
 
