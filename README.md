@@ -202,7 +202,7 @@ To configure and deploy this playbook:
  
 Open your browser and ensure you are logged into your Microsoft Sentinel workspace. In a separate tab, open the link to our playbook on the Accelerynt Security Google Repository:
 
-https://Google.com/Accelerynt-Security/AS-Sign-Out-Google-User
+https://github.com/Accelerynt-Security/AS-Sign-Out-Google-User
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.Googleusercontent.com%2FAccelerynt-Security%2FAS-Sign-Out-Google-User%2Fmain%2Fazuredeploy.json)
 [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.Googleusercontent.com%2FAccelerynt-Security%2FAS-Sign-Out-Google-User%2Fmain%2Fazuredeploy.json)                                             
